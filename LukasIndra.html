@@ -1,83 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lukas Indra</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laura — Personal Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="brand">Laura</h1>
+      <p class="brand-sub">Personal Portfolio Hero Image</p>
+    </div>
+  </header>
 
-    <!-- NAVBAR -->
-    <nav>
-        <h2 class="logo">Lukas Indra</h2>
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#hobi">Hobi</a>
-            <a href="#jadwal">Jadwal</a>
-            <a href="#kontak">Kontak</a>
-        </div>
-    </nav>
+  <main class="hero-wrap">
+    <section class="hero-card">
+      <!-- left vertical nav -->
+      <aside class="side-nav" aria-label="Menu">
+        <ul>
+          <li class="nav-active">HOME</li>
+          <li>ABOUT ME</li>
+          <li>PORTFOLIO</li>
+          <li>CONTACT</li>
+        </ul>
+      </aside>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Halo, Aku Lukas 👋</h1>
-        <p>Mahasiswa Informatika | Suka Fotografi | Belajar Web Developer</p>
-    </section>
+      <!-- left image area -->
+      <div class="hero-left">
+        <div class="blob"></div>
+        <!-- Ganti src dengan foto Anda -->
+        <img class="hero-main-img" src="images/hero-left.jpg" alt="Laura - hero" />
+      </div>
 
-    <!-- ABOUT -->
-    <section id="about" class="card">
-        <h2>Tentang Aku</h2>
-        <p>
-            Aku adalah mahasiswa Informatika yang sedang mendalami dunia web development.
-            Selain ngoding, aku juga suka fotografi dan eksplorasi teknologi baru.
+      <!-- right content -->
+      <div class="hero-right">
+        <!-- small circular image top-right -->
+        <img class="hero-circle" src="images/hero-topright.jpg" alt="Laura small portrait" />
+
+        <h2 class="headline">
+          <span class="hi">Hi!</span><br />
+          <span class="iam">I am</span><br />
+          <span class="name">Laura.</span>
+        </h2>
+
+        <p class="lead">
+          A UI/UX designer based in New York. I hope my 5 years experience of research and visual design can be helpful for your project.
         </p>
-    </section>
 
-    <!-- HOBI (GRID) -->
-    <section id="hobi">
-        <h2 class="section-title">Hobi</h2>
-        <div class="grid-container">
-            <div class="card">Fotografi 📸</div>
-            <div class="card">Main Game 🎮</div>
-            <div class="card">Belajar Coding 💻</div>
-        </div>
-    </section>
-
-    <!-- JADWAL -->
-    <section id="jadwal" class="card">
-        <h2>Jadwal Kuliah</h2>
-        <table>
-            <tr>
-                <th>Hari</th>
-                <th>Mata Kuliah</th>
-            </tr>
-            <tr>
-                <td>Senin</td>
-                <td>Pemrograman Platform</td>
-            </tr>
-            <tr>
-                <td>Rabu</td>
-                <td>Pembelajaran Mesin</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- FORM -->
-    <section id="kontak" class="card">
-        <h2>Kontak Aku</h2>
-        <form>
-            <input type="text" placeholder="Nama">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Pesan"></textarea>
-            <button type="submit">Kirim</button>
+        <form class="email-cta" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" aria-label="email" />
+          <button type="submit">Hire Me</button>
         </form>
+
+        <div class="links-meta">Experience &nbsp; · &nbsp; Skills &nbsp; · &nbsp; Project</div>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2026 Lukas Indra Christiawan</p>
-    </footer>
-
+  <footer class="page-note">IMAGES ARE NOT INCLUDED</footer>
 </body>
 </html>
