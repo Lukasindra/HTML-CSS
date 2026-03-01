@@ -3,82 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lukas Indra</title>
+    <title>Portofolio Saya</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <h2 class="logo">Lukas Indra</h2>
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#hobi">Hobi</a>
-            <a href="#jadwal">Jadwal</a>
-            <a href="#kontak">Kontak</a>
-        </div>
-    </nav>
+    <header>
+        <h1>Nama Kamu</h1>
+        <nav>
+            <a href="#about">Tentang</a>
+            <a href="#projects">Projek</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
 
-    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Halo, Aku Lukas 👋</h1>
-            <p>Mahasiswa Informatika | Fotografi | Web Developer</p>
-            <a href="#about" class="btn">Kenal Lebih Dekat</a>
-        </div>
+        <h2>Halo, Saya Lukas</h2>
+        <p>Saya belajar membuat website modern dan responsif menggunakan HTML & CSS.</p>
+        <a href="#projects" class="btn">Lihat Projek</a>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="card">
-        <h2>Tentang Aku</h2>
-        <p>
-            Aku adalah mahasiswa Informatika yang sedang mendalami web development.
-            Aku tertarik pada desain modern, clean layout, dan responsive website.
+    <section class="section" id="about">
+        <h2>Tentang Saya</h2>
+        <p class="about">
+            Saya adalah seorang yang sedang belajar pengembang web yang fokus pada pembuatan website
+            yang bersih, modern.
         </p>
     </section>
 
-    <!-- HOBI -->
-    <section id="hobi" class="section">
-        <h2 class="section-title">Hobi</h2>
-        <div class="grid-container">
-            <div class="card">Fotografi 📸</div>
-            <div class="card">Main Game 🎮</div>
-            <div class="card">Belajar Coding 💻</div>
+    <section class="section" id="projects">
+        <h2>Projek Saya</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Website mini Toko Online</h3>
+                <p>Membuat tampilan toko online menggunakan HTML dan CSS.</p>
+            </div>
+            <div class="card">
+                <h3>Landing Page Produk</h3>
+                <p>Desain landing page modern untuk promosi produk.</p>
+            </div>
+            <div class="card">
+                <h3>System Apotik</h3>
+                <p>Website Apotik sederhana.</p>
+            </div>
         </div>
     </section>
 
-    <!-- JADWAL -->
-    <section id="jadwal" class="card">
-        <h2>Jadwal Kuliah</h2>
-        <table>
-            <tr>
-                <th>Hari</th>
-                <th>Mata Kuliah</th>
-            </tr>
-            <tr>
-                <td>Senin</td>
-                <td>Pemrograman Platform</td>
-            </tr>
-            <tr>
-                <td>Rabu</td>
-                <td>Pembelajaran Mesin</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- KONTAK -->
-    <section id="kontak" class="card">
+    <section class="section" id="contact">
         <h2>Kontak</h2>
-        <form>
-            <input type="text" placeholder="Nama">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Pesan"></textarea>
-            <button type="submit">Kirim Pesan</button>
-        </form>
+        <p class="contact-text">
+            Email: lukasindra211@gmail.com <br>
+            Instagram: @lukas.indra.21
+        </p>
     </section>
 
     <footer>
-        <p>&copy; 2026 Lukas Indra Christiawan</p>
+        &copy; 2026 Lukas Indra.
     </footer>
 
 </body>
