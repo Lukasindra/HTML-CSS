@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -9,7 +10,7 @@
 }
 
 body{
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     color:white;
 }
 
@@ -20,8 +21,10 @@ header{
     padding:20px 10%;
     display:flex;
     justify-content:space-between;
+    align-items:center;
     background:rgba(0,0,0,0.4);
     backdrop-filter:blur(10px);
+    z-index:1000;
 }
 
 nav a{
@@ -29,6 +32,12 @@ nav a{
     text-decoration:none;
     margin-left:25px;
     position:relative;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f5ff;
 }
 
 nav a::after{
@@ -38,8 +47,8 @@ nav a::after{
     height:2px;
     left:0;
     bottom:-5px;
-    background:#00f5ff;
-    transition:0.3s;
+    background:linear-gradient(90deg,#ff00cc,#00f5ff);
+    transition:0.4s;
 }
 
 nav a:hover::after{
@@ -50,29 +59,49 @@ nav a:hover::after{
 .hero{
     height:100vh;
     display:flex;
-    justify-content:center;
     align-items:center;
-    text-align:center;
+    padding:0 10%;
     padding-top:80px;
 }
 
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-content{
+    flex:1;
+}
+
 .profile-img{
-    width:170px;
-    height:170px;
+    width:200px;
+    height:200px;
     border-radius:50%;
-    border:4px solid #00f5ff;
-    box-shadow:0 0 25px #00f5ff;
-    margin-bottom:20px;
+    object-fit:cover;   
+    object-position:center;
+    border:4px solid #ff00cc;
+    box-shadow:0 0 25px rgba(255,0,204,0.6);
 }
 
 .hero h2 span{
-    color:#00f5ff;
-    text-shadow:0 0 10px #00f5ff;
+    background: linear-gradient(90deg,#ff00cc,#00f5ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* BUTTON */
 .btn, .btn-outline{
     display:inline-block;
-    margin:15px 10px;
+    margin:15px 10px 0 0;
     padding:12px 30px;
     border-radius:30px;
     text-decoration:none;
@@ -81,8 +110,8 @@ nav a:hover::after{
 }
 
 .btn{
-    background:#00f5ff;
-    color:black;
+    background: linear-gradient(90deg,#ff00cc,#00f5ff);
+    color:white;
 }
 
 .btn:hover{
@@ -90,26 +119,28 @@ nav a:hover::after{
 }
 
 .btn-outline{
-    border:2px solid #00f5ff;
-    color:#00f5ff;
+    border:2px solid #ff00cc;
+    color:#ff00cc;
 }
 
 .btn-outline:hover{
-    background:#00f5ff;
-    color:black;
+    background:#ff00cc;
+    color:white;
+    transform:scale(1.05);
 }
 
 /* SECTION */
 .section{
     padding:100px 10%;
     text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 .section h2{
     margin-bottom:30px;
 }
 
-/* SKILL */
+/* SKILLS */
 .skill{
     margin:20px 0;
 }
@@ -123,12 +154,7 @@ nav a:hover::after{
 .progress span{
     display:block;
     height:10px;
-    background:#00f5ff;
-    animation:load 2s ease;
-}
-
-@keyframes load{
-    from{width:0;}
+    background:linear-gradient(90deg,#ff00cc,#00f5ff);
 }
 
 /* PROJECT */
@@ -142,12 +168,13 @@ nav a:hover::after{
     background:rgba(255,255,255,0.08);
     padding:25px;
     border-radius:20px;
-    transition:0.3s;
+    transition:0.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
 }
 
 .card:hover{
     transform:translateY(-10px);
-    background:rgba(0,245,255,0.2);
+    background:linear-gradient(135deg,#ff00cc33,#00f5ff33);
 }
 
 /* CONTACT */
@@ -167,8 +194,7 @@ nav a:hover::after{
 }
 
 .contact-item:hover{
-    background:#00f5ff;
-    color:black;
+    background:linear-gradient(90deg,#ff00cc,#00f5ff);
     transform:scale(1.05);
 }
 
@@ -181,5 +207,35 @@ footer{
 
 /* RESPONSIVE */
 @media(max-width:768px){
-    nav{display:none;}
+
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content{
+        margin-top:20px;
+    }
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        margin:0 10px;
+        font-size:14px;
+    }
+
+    .section{
+        padding:80px 5%;
+    }
+
+    .profile-img{
+        width:140px;
+        height:140px;
+    }
 }
