@@ -3,62 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Portofolio Modern</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Nama Kamu</h1>
+        <h1 class="logo">Lukas Indra</h1>
         <nav>
             <a href="#about">Tentang</a>
+            <a href="#skills">Skill</a>
             <a href="#projects">Projek</a>
             <a href="#contact">Kontak</a>
         </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
-        <h2>Halo, Saya Lukas</h2>
-        <p>Saya belajar membuat website modern dan responsif menggunakan HTML & CSS.</p>
-        <a href="#projects" class="btn">Lihat Projek</a>
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+            <h2>Halo, Saya <span>Lukas Indra</span></h2>
+            <p>Front-End Developer | UI Designer | Creative Thinker</p>
+            <a href="#projects" class="btn">Lihat Projek</a>
+        </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" id="about">
         <h2>Tentang Saya</h2>
-        <p class="about">
-            Saya adalah seorang yang sedang belajar pengembang web yang fokus pada pembuatan website
-            yang bersih, modern.
+        <p>
+            Saya adalah seorang developer yang sedang fokus belajar membuat website modern,
+            responsif, dan menarik hanya menggunakan HTML & CSS.
+      
         </p>
     </section>
 
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <h2>Skill Saya</h2>
+        <div class="skills">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">UI/UX Design</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section class="section" id="projects">
         <h2>Projek Saya</h2>
         <div class="projects">
             <div class="card">
-                <h3>Website mini Toko Online</h3>
-                <p>Membuat tampilan toko online menggunakan HTML dan CSS.</p>
+                <h3>Landing Page Modern</h3>
+                <p>Website promosi produk dengan desain clean & elegan.</p>
             </div>
             <div class="card">
-                <h3>Landing Page Produk</h3>
-                <p>Desain landing page modern untuk promosi produk.</p>
+                <h3>Website Toko Onlin Sederhana</h3>
+                <p>Tampilan e-commerce responsif menggunakan Grid & Flexbox.</p>
             </div>
             <div class="card">
-                <h3>System Apotik</h3>
-                <p>Website Apotik sederhana.</p>
+                <h3>Web Apotik</h3>
+                <p>Website apotik sederhana.</p>
             </div>
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section" id="contact">
         <h2>Kontak</h2>
-        <p class="contact-text">
-            Email: lukasindra211@gmail.com <br>
-            Instagram: @lukas.indra.21
-        </p>
+        <p>Email: lukasindra211@gmail.com</p>
+        <p>Instagram: @lukas.indra.21</p>
     </section>
 
     <footer>
-        &copy; 2026 Lukas Indra.
+        © 2026 Lukas Indra | Built with HTML & CSS
     </footer>
 
 </body>
